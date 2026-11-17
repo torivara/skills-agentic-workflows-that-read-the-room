@@ -9,10 +9,13 @@ permissions:
   contents: read
   copilot-requests: write
 strict: true
-model: gpt-5.6-sol
+model: fusion
 engine:
   id: copilot
   copilot-sdk: true
+  args:
+    - --fusion-tier
+    - standard
 network:
   allowed:
     - github.blog
