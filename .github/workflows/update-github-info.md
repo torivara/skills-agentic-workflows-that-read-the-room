@@ -12,6 +12,8 @@ strict: true
 engine:
   id: copilot
   copilot-sdk: true
+  fallback-models:
+    - gpt-5.6-sol
 network:
   allowed:
     - github.blog
