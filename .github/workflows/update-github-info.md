@@ -9,12 +9,13 @@ permissions:
   contents: read
   copilot-requests: write
 strict: true
-model: gpt-6.1-sol
+model: fusion
 engine:
   id: copilot
   copilot-sdk: true
-  fallback-models:
-    - gpt-6-luna
+  args:
+    - --fusion-tier
+    - standard
 network:
   allowed:
     - github.blog
