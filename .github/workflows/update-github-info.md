@@ -9,13 +9,10 @@ permissions:
   contents: read
   copilot-requests: write
 strict: true
-model: fusion
+model: auto
 engine:
   id: copilot
   copilot-sdk: true
-  args:
-    - --fusion-tier
-    - standard
 network:
   allowed:
     - github.blog
